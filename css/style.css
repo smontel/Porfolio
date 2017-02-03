@@ -27,8 +27,16 @@ body {
     position: fixed;
     top: 30%;
     z-index: 3;
-}
+		left: -7%;
+		transition: left .5s ease-out;
+		-moz-transition: left .5s ease-out;
+		-webkit-transition: left .5s ease-out;
+		-o-transition: left .5s ease-out;
 
+}
+.nav-fixed:hover{
+	left:0;
+}
 .nav-fixed li {
 	background-color: black;
     text-align: center;
@@ -214,7 +222,7 @@ p.over{
     content: '';
     display: block;
     position: absolute;
-    width: 385px;
+    width: 360px;
     height: 24px;
     background: #999;
     border-radius: 12px;
@@ -232,7 +240,7 @@ p.over{
     content: '|||||||||||||';
     display: block;
     position: absolute;
-    width: 385px;
+    width: 360px;
     height: 24px;
     overflow: hidden;
     border-radius: 12px;
@@ -252,7 +260,7 @@ p.over{
     content: '';
     display: block;
     position: absolute;
-    width: 365px;
+    width: 340px;
     height: 24px;
     background: #999;
     border-radius: 12px;
@@ -270,7 +278,7 @@ p.over{
     content: '|||||||||||||';
     display: block;
     position: absolute;
-    width: 365px;
+    width: 340px;
     height: 24px;
     overflow: hidden;
     border-radius: 12px;
@@ -360,4 +368,21 @@ p.over{
     letter-spacing: -6px;
     color: #000;
     opacity: 0.06;
+}
+
+.social li {
+	margin-top:5%;
+	display: inline-block;
+
+}
+.social li img{
+	width:50%;
+	opacity: 0.5%;
+}
+.social li:hover img{
+	opacity:1;
+}
+.social{
+	margin: auto;
+	text-align: center;
 }
